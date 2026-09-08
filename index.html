@@ -4,36 +4,55 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bem-Estar - TCC</title>
-<style>
-body{font-family:Arial; margin:0; background:#f4f8f4; color:#333}
-header{background:#2e7d32; color:white; padding:30px; text-align:center}
-.container{max-width:800px; margin:auto; padding:20px; background:white}
-img{width:100%; border-radius:12px; margin:20px 0}
-h2{color:#2e7d32; border-left:5px solid #2e7d32; padding-left:10px}
-</style>
+<link rel="stylesheet" href="estilo.css">
 </head>
 <body>
 <header>
 <h1>Promoção do Bem-Estar e Qualidade de Vida</h1>
-<p>Projeto de TCC - Saúde e Qualidade de Vida</p>
+<p>Projeto de TCC - Os 5 Eixos da Saúde</p>
 </header>
+
 <div class="container">
-<img src="foto.jpg" alt="5 eixos da saúde">
+<img src="foto.jpg" alt="Os 5 eixos do Bem Estar">
 
-<h2>1. Hidratação</h2>
-<p>Beber água regularmente é fundamental para o funcionamento do corpo.</p>
-
-<h2>2. Sono de Qualidade</h2>
-<p>Dormir bem regula hormônios e melhora a disposição.</p>
-
-<h2>3. Alimentação Saudável</h2>
-<p>Uma dieta equilibrada fornece energia e nutrientes essenciais.</p>
-
-<h2>4. Atividade Física</h2>
-<p>Exercícios melhoram a saúde física e mental.</p>
-
-<h2>5. Saúde Mental</h2>
-<p>Cuidar da mente é tão importante quanto cuidar do corpo.</p>
+<div class="card">
+<h2>1. Atividade Física</h2>
+<button onclick="mostrar('d1')">Ver dicas</button>
+<div id="d1" class="detalhe">Faça 30 min por dia: caminhada, dança ou alongamento!</div>
 </div>
+
+<div class="card">
+<h2>2. Nutrição</h2>
+<button onclick="mostrar('d2')">Ver dicas</button>
+<div id="d2" class="detalhe">Beba 2L de água, coma frutas e verduras.</div>
+</div>
+
+<div class="card">
+<h2>3. Saúde Mental</h2>
+<button onclick="mostrar('d3')">Ver dicas</button>
+<div id="d3" class="detalhe">Respire fundo, medite 5 min, converse com alguém.</div>
+</div>
+
+<div class="card">
+<h2>4. Contexto Social</h2>
+<button onclick="mostrar('d4')">Ver dicas</button>
+<div id="d4" class="detalhe">Fique perto de família e amigos!</div>
+</div>
+
+<div class="card">
+<h2>5. Sono e Descanso</h2>
+<button onclick="mostrar('d5')">Ver dicas</button>
+<div id="d5" class="detalhe">Durma 7 a 8 horas por noite.</div>
+</div>
+
+<div class="card final">
+<h2>Mensagem Final</h2>
+<button onclick="motivacao()" class="btn-final">Clique aqui ✨</button>
+<p id="frase"></p>
+</div>
+
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
