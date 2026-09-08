@@ -22,7 +22,7 @@
 
 <div class="card">
 <h2>2. Nutrição</h2>
-<p>Alimentação equilibrada e saudável para mais energia e disposição.</p>
+<p>Alimentação equilibrada e saudável para mais energia.</p>
 </div>
 
 <div class="card">
@@ -42,11 +42,18 @@
 
 <div class="card final">
 <h2>Mensagem Final</h2>
-  <button onclick="document.getElementById('frase').innerHTML='Não desista, você pode chegar nos seus objetivos! 💜'; document.getElementById('frase').style.display='block'" class="btn-final">Clique aqui ✨</button>
+<button onclick="motivacao()" class="btn-final">Clique aqui ✨</button>
+<p id="frase"></p>
 </div>
 
 </div>
 
-<script src="script.js"></script>
+<script>
+function motivacao(){
+  document.getElementById('frase').innerHTML = 'Não desista, você pode chegar nos seus objetivos! 💜';
+  document.getElementById('frase').style.display = 'block';
+}
+</script>
+
 </body>
 </html>
