@@ -1,0 +1,10 @@
+<!DOCTYPE html> 
+<html lang="pt-BR"> <head>     <meta charset="UTF-8">     <title>Promoção do Bem-Estar</title>     <link rel="stylesheet" href="style.css"> </head> <body>      <header>         <h1>Promoção do Bem-Estar em Comunidades Religiosas</h1>     </header>      <section>         <h2>Alimentação Saudável</h2>         <p>Uma alimentação equilibrada contribui para a saúde e qualidade de vida.</p>     </section>
+<section>     <h2>Hidratação</h2>     <p>Beber água regularmente auxilia no funcionamento adequado do organismo.</p> </section>  <section>     <h2>Qualidade do Sono</h2>     <p>Dormir bem contribui para a saúde física, mental e emocional.</p> </section>
+
+
+
+      <section>         <h2>Atividade Física</h2>         <p>A prática regular de exercícios ajuda na prevenção de doenças.</p>     </section>      <section>         <h2>Saúde Emocional</h2>         <p>O cuidado com a mente é tão importante quanto o cuidado com o corpo.</p>     </section>      <button onclick="mostrarMensagem()">         Clique para receber uma mensagem motivacional     </button>      <p id="mensagem"></p>
+<img src="bemestar" alt="Bem-estar e qualidade de vida" width="100%">
+
+      <script src="script.js"></script>  </body> </html>
