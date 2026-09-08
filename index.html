@@ -3,26 +3,56 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TCC - Bem Estar</title>
-<style>
-body{font-family:Arial;margin:0;background:#f0f4f8}
-header{background:#4a148c;color:white;padding:30px;text-align:center}
-.container{max-width:800px;margin:auto;padding:20px}
-.card{background:white;padding:20px;border-radius:12px;margin:15px 0}
-img{width:100%;border-radius:12px}
-button{background:#4a148c;color:white;border:none;padding:12px 20px;border-radius:8px;font-size:16px;cursor:pointer}
-#frase{margin-top:20px;font-size:22px;font-weight:bold;color:#4a148c;display:none;background:white;padding:15px;border-radius:10px}
-</style>
+<title>Bem-Estar - TCC</title>
+<link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-<header><h1>Os 5 Eixos do Bem-Estar</h1></header>
+<header>
+<h1>Promoção do Bem-Estar e Qualidade de Vida</h1>
+<p>Projeto de TCC - Os 5 Eixos da Saúde</p>
+</header>
+
 <div class="container">
-<img src="foto.jpg">
-<div class="card" style="text-align:center">
+<img src="foto.jpg" alt="Os 5 eixos do Bem Estar">
+
+<div class="card">
+<h2>1. Atividade Física</h2>
+<button onclick="mostrar('d1')">Ver dicas</button>
+<div id="d1" class="detalhe">Faça 30 min por dia: caminhada, dança ou alongamento!</div>
+</div>
+
+<div class="card">
+<h2>2. Nutrição</h2>
+<button onclick="mostrar('d2')">Ver dicas</button>
+<div id="d2" class="detalhe">Beba 2L de água, coma frutas e verduras.</div>
+</div>
+
+<div class="card">
+<h2>3. Saúde Mental</h2>
+<button onclick="mostrar('d3')">Ver dicas</button>
+<div id="d3" class="detalhe">Respire fundo, medite 5 min, converse com alguém.</div>
+</div>
+
+<div class="card">
+<h2>4. Contexto Social</h2>
+<button onclick="mostrar('d4')">Ver dicas</button>
+<div id="d4" class="detalhe">Fique perto de família e amigos!</div>
+</div>
+
+<div class="card">
+<h2>5. Sono e Descanso</h2>
+<button onclick="mostrar('d5')">Ver dicas</button>
+<div id="d5" class="detalhe">Durma 7 a 8 horas por noite.</div>
+</div>
+
+<div class="card final">
 <h2>Mensagem Final</h2>
-<button onclick="document.getElementById('frase').style.display='block'; document.getElementById('frase').innerHTML='Não desista, você pode chegar nos seus objetivos! 💜'">Clique aqui ✨</button>
+<button onclick="motivacao()" class="btn-final">Clique aqui ✨</button>
 <p id="frase"></p>
 </div>
+
 </div>
+
+<script src="script.js"></script>
 </body>
 </html>
